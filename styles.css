@@ -1,0 +1,110 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body:hover {
+color:blue
+}
+p {
+    color:blue
+}
+p:hover {
+    color:fuchsia
+}
+a {
+    color: fuchsia; /* Normal link color */
+}
+a:visited {
+    color: fuchsia; /* Visited link color */
+}
+a:hover {
+    color: yellow; /* Hovered link color */
+}
+a:active {
+    color: red; /* Active (clicked) link color */
+}
+a {
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    height:100vh; 
+}
+/* Grid container */
+.grid-container {
+    display: grid;
+    position: relative;
+}
+
+/* Style for the background image */
+.background-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    grid-area: 1 / 1;
+}
+
+/* Style for the overlay text */
+.overlay-text {
+    position: absolute;
+    top: -50%;
+    left: 75%;
+    transform: translate(-50%, 30%);
+    color: darkgray; /* Text color */
+    font-size: 35px; /* Adjust text size */
+    z-index: 1; /* Ensure text is on top */
+}
+
+.overlay-textt {
+    position: absolute;
+    top: -50%;
+    left: 1%;
+    transform: translate(-50%, 30%);
+    color: blue; /* Text color */
+    font-size: 35px; /* Adjust text size */
+    z-index: 1; /* Ensure text is on top */
+}
+
+.overlay-texttt {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: fuchsia; /* Text color */
+    font-size: 30px; /* Text size */
+    font-family: Arial, sans-serif; /* Font style */
+    text-align: left;
+}
+
+html, body {
+    color:black;
+    margin:0px;
+    padding:0px;
+  }
+  
+  details {
+    cursor: pointer;
+  }
+  
+  p {
+    cursor: default;
+  }
+  #info {
+    padding:25px;
+    position:absolute;
+    font-size:18px;
+    z-index:1;
+  }
+  
+  button {
+    border-radius:15px;
+    background-color:transparent;
+    border-width:1px;
+    padding:20px;
+  }
+  
