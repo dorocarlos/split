@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<title>HYPNIC</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="star-fill.svg">
+<script src="https://cdn.jsdelivr.net/gh/williamngan/pts/dist/pts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<style>
+    .link-container {
+        text-align: center;
+    }
+        .star {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            transform: translate(-50%, -50%);
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: black;
+            font-size: 15pt;
+        }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item background-image">
+            <script>
+                (async function() { // async/await function
+                  const run = Pts.quickStart( "#pt", "white" );
+            const pattern = await Img.loadPattern( "knot.png", space, "repeat");
+            
+          
+            run( time  => {
+              const ang = space.pointer.$subtract( space.center ).angle();
+              const transform = new Mat().translate2D( [time/50, 0] ).rotate2D( ang, space.center ).domMatrix;
+              pattern.setTransform( transform );
+              form.fill( pattern ).rect( space.innerBound )
+            });
+          
+            //// ----  
+          
+            space.bindMouse().bindTouch().play();
+        })();
+            </script>
+        </div>
+        <div class="grid-item overlay-text">
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡖⠉⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⡤⣄⠀⠀⠀⠀⠀⢰⠀⠀⢸⠀⠀⠀⡸⠉⢣⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⢸⡀⠈⢧⠀⠀⠀⠀⢸⣀⣀⢸⠀⠀⠀⠇⠀⢸⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⢈⡆⠀⠀⠀⢸⠀⠀⠸⠀⠀⢸⠠⠄⡘⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢻⠉⠀⠱⠀⠀⠀⡆⢀⡀⣄⠀⠀⡆⠀⠀⠇⠀⠀⠀⡔⢢
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⣀⢇⠀⠀⡇⠉⠙⢹⠀⠘⠰⠦⢼⠀⠀⠀⡰⠀⢰
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡉⠁⠈⠆⠀⡇⠀⠀⢸⠀⡇⠀⠀⠸⠀⠀⡰⠁⢂⠄
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠘⣄⡇⢴⡤⢸⣤⢁⡀⠀⠇⢀⡎⠠⣀⠎⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡖⠊⠁⠈⠒⠀⠀⠀⠀⠉⠒⠸⣄⡜⠀⢀⠟⠀⠀
+            ⡠⠖⠒⠢⢤⡀⠀⠀⠀⠀⢠⠁⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢗⡞⠀⠀⠀
+            ⠉⠒⢄⠀⠀⠘⢆⠀⠀⠀⠘⣄⠤⠀⠤⢀⠈⠁⠐⠤⢀⡀⠀⠀⠀⠀⡇⠀⠀⠀
+            ⠀⠀⠀⠛⢄⠀⠈⠓⣄⠀⢸⢠⠀⠀⠑⢄⠈⠢⣀⠀⠀⠈⠁⠢⡀⢠⠃⠀⠀⠀
+            ⠀⠀⠀⠀⠈⢳⠀⠀⠈⠓⠚⠁⠀⠀⠀⠈⡆⠀⠀⠑⠂⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀ 
+        </div>
+        <div class="overlay-textt">
+            <div id="star1" class="star"></div>
+            <div id="star2" class="star"></div>
+            <div id="star3" class="star"></div>
+            <div id="star4" class="star"></div>
+            <div id="star5" class="star"></div>
+            <div id="star6" class="star"></div>
+            <div id="star7" class="star"></div>
+            <div id="star8" class="star"></div>
+            <div id="star9" class="star"></div>
+        
+            <div id="controls">
+                <label>
+                    <input type="radio" name="color" value="yellow" checked> Thy name is my healing, and remembrance of Thee is my remedy.
+                </label>
+                <label>
+                    <input type="radio" name="color" value="red"> Nearness to Thee is my hope, and love for Thee is my companion.
+                </label>
+                <label>
+                    <input type="radio" name="color" value="blue"> Thy mercy to me is my healing in this world and the world to come.
+                </label>
+                <label>
+                    <input type="radio" name="color" value="fuchsia"> ...
+                </label>
+            </div>
+        </div>
+    </div>
+ <script>
+    // Function to move all stars around randomly
+    function moveStars() {
+        const stars = document.querySelectorAll('.star');
+        const maxX = window.innerWidth - 50; // Star width
+        const maxY = window.innerHeight - 50; // Star height
+        
+        stars.forEach(star => {
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+        });
+    }
+
+    // Function to update star color based on radio button selection
+    function updateColor(event) {
+        const color = event.target.value;
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.style.backgroundColor = color;
+        });
+    }
+
+    // Event listener for radio buttons
+    document.querySelectorAll('input[name="color"]').forEach(radio => {
+        radio.addEventListener('change', updateColor);
+    });
+
+    // Move stars every 2 seconds
+    setInterval(moveStars, 2000);
+</script>
+<div class="link-container">
+    <a href="index.html">⭑ HOME ⭑</a>
+ </div>
+</body>
+</html>

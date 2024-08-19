@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SPLIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+            @keyframes moveAround {
+            0% {
+                transform: translate(400px, 400px);
+            }
+            25% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(800px, 80px);
+            }
+            75% {
+                transform: translate(0px, 699px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .moving-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: moveAround 11s linear infinite;
+            width: 10%;  /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+        <details>
+<summary>click screen and use WASD/arrow keys to move around.</summary>
+        </details>
+      </div>
+    <div id="3dstuff">
+      <a-scene embed fog="type: linear; color:white; near: 4; far:30">
+        <!--skybox check it out -->
+        <a-sky>
+        </a-sky>
+        <a-entity position="0 0 -11"
+        animation="property:rotation; to: 0 360 0; loop: true; dur: 80000; easing:linear">
+            <a-text value="I feed it on milk; that seems to suit it best. In long draughts it sucks the milk in through its fanglike teeth. Naturally it is a great source of entertainment for children. Sunday morning is the visiting hour. I sit with the little beast on my knees, and the children of the whole neighborhood stand around me. " color="black" position="-4 5 -10"></a-text> 
+            <a-text value="I have a curious animal, half kitten, half lamb. It is a legacy from my father. But it only developed in my time; formerly it was far more lamb than kitten. Now it is both in about equal parts. From the cat it takes its head and claws, from the lamb its size and shape; from both its eyes, which are wild and flickering, its hair, which is soft, lying close to its body, its movements, which partake both of skipping and slinking. Lying on the window sill in the sun it curls up in a ball and purrs; out in the meadow it rushes about like mad and is scarcely to be caught. It flees from cats and makes to attack lambs. On moonlight nights its favorite promenade is along the eaves. It cannot mew and it loathes rats. Beside the hen coop it can lie for hours in ambush, but it has never yet seized an opportunity for murder." color="lightgray" position="-4 2 0"></a-text> 
+            <a-text value="I never trouble to answer, but confine myself without further explanation to exhibiting my possession. Sometimes the children bring cats with them; once they actually brought two lambs. But against all their hopes there was no scene of recognition. The animals gazed calmly at each other with their animal eyes, and obviously accepted their reciprocal existence as a divine fact." color="black" position="-2 4 0"></a-text>
+            <a-text value="Sitting on my knees, the beast knows neither fear nor lust of pursuit. Pressed against me it is happiest. It remains faithful to the family that brought it up. In that there is certainly no extraordinary mark of fidelity, but merely the true instinct of an animal which, though it has countless step-relations in the world, has perhaps not a single blood relation, and to which consequently the protection it has found with us is sacred." color="black" position="-12 4 0"></a-text>
+            <a-text value="Sometimes I cannot help laughing when it sniffs around me and winds itself between my legs and simply will not be parted from me. Not content with being lamb and cat, it almost insists on being a dog as well. Once when, as may happen to anyone, I could see no way out of my business problems and all that they involved, and was ready to let everything go, and in this mood was lying in my rocking chair in my room, the beast on my knees, I happened to glance down and saw tears dropping from its huge whiskers. Were they mine, or were they the animal's? Had this cat, along with the soul of a lamb, the ambitions of a human being? I did not inherit much from my father, but this legacy is quite remarkable." color="black" position="-18 1 -8"></a-text>
+            <a-text value="It has the restlessness of both beasts, that of the cat and that of the lamb, diverse as they are. For that reason its skin feels too tight for it. Sometimes it jumps up on the armchair beside me, plants its front legs on my shoulder, and put its muzzle to my ear. It is as if it were saying something to me, and as a matter of fact it turns its head afterwards and gazes in my face to see the impression its communication has made. And to oblige it I behave as if I had understood, and nod. Then it jumps to the floor and dances about with joy.
+
+            " color="black" position="-13 1 10"></a-text>
+            <a-text value="Perhaps the knife of the butcher would be a release for this animal; but as it is a legacy I must deny it that. So it must wait until the breath voluntarily leaves its body, even though it sometimes gazes at me with a look of human understanding, challenging me to do the thing of which both of us are thinking. " color="black" position="2 4 0"></a-text>
+        </a-entity>
+        <a-entity position="0 0 -10"
+        animation="property:rotation; to: 0 360 0; loop: true; dur: 300; easing:linear">
+        <a-text
+            value="★★★★★★"
+            font="custom-msdf.json" font-image="custom-msdf.png" negate="false" scale="2 2 1">
+        </a-text>
+        </a-entity>
+        <a-entity position="-2 3 -6"
+        animation="property:rotation; to: 0 360 0; loop: true; dur: 10000; easing:linear">
+        <a-text width="40" value="SSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLIT" color="darkgray" position="-2 4 0"></a-text>
+        </a-entity>
+        <a-entity position="2 2 -14"
+        animation="property:rotation; to: 0 360 0; loop: true; dur: 4000; easing:linear">
+        <a-text width="17" value="SSSSSSP
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLIT" color="darkgray" position="-2 4 -5"></a-text>
+        </a-entity>
+        <a-entity position="-6 1 -20"
+        animation="property:rotation; to: 0 360 0; loop: true; dur: 3000; easing:linear">
+        <a-text width="6" value="SSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLITSSSSSSPLITSPLITSPLITTTTTTTTTT
+        SLPITTTTTTTTTTSSSSSSPLITSPLITSPLITSPLITTTTTTTTTT
+        SSSSSSSSPLITSPLITSPLITSSSSSSSSSSSSPLITTTTSSSSSSSS
+        SSSSSPLITTTTTTTTTTTSPLITTTTTTTTTTSSSSSSSPLITTTTTT
+        SPLITSPLITSPLITSSSSSSSSSPLITSPLITTTTTTTSPLITSPLIT
+        SSSSSSSSSSSSPLITSPLITTTTTTTTTTTTTTSSSSSSSSSSSPLIT" color="darkgray" position="-2 4 0"></a-text>
+        </a-entity>
+        <a-entity position="-3 -12 -15" scale="4 4 4">
+            <a-text value="verb
+            1.
+            break or cause to break forcibly into parts, especially into halves or along the grain." color="black" position="-2 4 0"></a-text>
+        </a-entity>
+        <a-entity position="-6 -4 -22" scale="4 4 4">
+            <a-text value="A CROSSBREED - FRANZ KAFKA" color="black" position="-2 4 0"></a-text>
+        </a-entity>
+        <a-entity
+          position="11 0 -3"
+          scale="7 7 7"
+          obj-model="#star"
+          sound="src: ; autoplay: true; loop:true"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 200; easing:linear"
+        ></a-entity>
+        <a-entity
+          light="type: ambient; intensity: 0.05; distance: 40; decay: 2 color: blue;"
+          position="1 3 1"
+        ></a-entity>
+        <a-plane
+          scale="100 100 100"
+          position="0 0 0"
+          rotation="-90 0 0"
+          width="4"
+          height="4"
+          color="lightgray"
+        ></a-plane>
+      </a-scene>
+    </div>
+    <div class="container">
+        <div class="overlay-texttt">⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣭⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⠤⢤⣀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠴⠒⢋⣉⣀⣠⣄⣀⣈⡇
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣯⠴⠚⠉⠉⠀⠀⠀⠀⣤⠏⣿
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⡇⠁⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡿⠿⢛⠁⠁⣸⠀⠀⠀⠀⠀⣤⣾⠵⠚⠁
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⢦⡀⠀⣠⠀⡇⢧⠀⠀⢀⣠⡾⡇⠀⠀⠀⠀⠀⣠⣴⠿⠋⠁⠀⠀⠀⠀⠘⣿⠀⣀⡠⠞⠛⠁⠂⠁⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡈⣻⡦⣞⡿⣷⠸⣄⣡⢾⡿⠁⠀⠀⠀⣀⣴⠟⠋⠁⠀⠀⠀⠀⠐⠠⡤⣾⣙⣶⡶⠃⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣂⡷⠰⣔⣾⣖⣾⡷⢿⣐⣀⣀⣤⢾⣋⠁⠀⠀⠀⣀⢀⣀⣀⣀⣀⠀⢀⢿⠑⠃⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡦⠴⠴⠤⠦⠤⠤⠤⠤⠤⠴⠶⢾⣽⣙⠒⢺⣿⣿⣿⣿⢾⠶⣧⡼⢏⠑⠚⠋⠉⠉⡉⡉⠉⠉⠹⠈⠁⠉⠀⠨⢾⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠂⠐⠀⠀⠀⠈⣇⡿⢯⢻⣟⣇⣷⣞⡛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣆⠀⠀⠀⠀⢠⡷⡛⣛⣼⣿⠟⠙⣧⠅⡄⠀⠀⠀⠀⠀⠀⠰⡆⠀⠀⠀⠀⢠⣾⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⢶⠏⠉⠀⠀⠀⠀⠀⠿⢠⣴⡟⡗⡾⡒⠖⠉⠏⠁⠀⠀⠀⠀⣀⢀⣠⣧⣀⣀⠀⠀⠀⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢴⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⣠⣷⢿⠋⠁⣿⡏⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣿⢭⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⢏⡵⠛⠀⠀⠀⠀⠀⠀⠀⣀⣴⠞⠛⠀⠀⠀⠀⢿⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⢿⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣼⠛⣲⡏⠁⠀⠀⠀⠀⠀⢀⣠⡾⠋⠉⠀⠀⠀⠀⠀⠀⢾⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠟⠀⢰⡯⠄⠀⠀⠀⠀⣠⢴⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠁⠁⠀⠘⠧⠤⢤⣤⠶⠏⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢾⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣇⠂⢀⣀⣀⠤⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢼⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠄⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</div>
+    <img src="" alt="Moving Image" class="moving-imag">
+  </body>
+</html>
+
+
