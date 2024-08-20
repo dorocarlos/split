@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<title>MS. BEAUTIFUL</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="star-fill.svg">
+<script src="https://cdn.jsdelivr.net/gh/williamngan/pts/dist/pts.js"></script>
+<style>
+    .link-container {
+        text-align: center;
+    }
+    @keyframes moveAround {
+        0% {
+            top: 0%;
+            left: 0%;
+            }
+            25% {
+                top: 90%;
+                left: 40%;
+            }
+            50% {
+                top: 20%;
+                left: 90%;
+            }
+            75% {
+                top: 0%;
+                left: 50%;
+            }
+            100% {
+                top: 0%;
+                left: 0%;
+            }
+        }
+
+        .moving-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: moveAround 12s linear infinite;
+            width: 220px;  /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        @keyframes moveArounddd {
+            0% {
+                transform: translate(800px, 80px);
+            }
+            25% {
+                transform: translate(700px, 200px);
+            }
+            50% {
+                transform: translate(400px, 0px);
+            }
+            75% {
+                transform: translate(200px, 400px);
+            }
+            100% {
+                transform: translate(500px, 600px);
+            }
+        }
+        @keyframes moveAroundd {
+            0% {
+                top: 20%;
+            left: 90%;
+            }
+            25% {
+                top: 30%;
+                left: 65%;
+            }
+            50% {
+                top: 0%;
+                left: 40%;
+            }
+            75% {
+                top: 60%;
+                left: 20%;
+            }
+            100% {
+                top: 90%;
+                left: 70%;
+            }
+        }
+
+        .moving-imagee {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: moveAroundd 10s linear infinite;
+            width: 220px;  /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+</style>
+</head>
+<body>
+    <script>
+ 
+ let run = Pts.quickStart( "#pt", "white" );
+
+run( (time, ftime)  => {
+  let size = space.center.$subtract( space.pointer ).abs().multiply(2);
+  let rect = Rectangle.fromCenter( space.center, size.$max( space.size.$divide(6) )  );
+  let content = "how did you know that about me?";
+
+  form.fill("white").stroke("white", 0).rect( rect );
+  form.fillOnly("black");
+  form.font
+  form.alignText("left").textBox( rect, content, "top" );
+  form.alignText("left").textBox( rect, content, "middle" );
+  form.alignText("left").textBox( rect, content, "bottom" );
+  form.alignText("right").textBox( rect, content, "top" );
+  form.alignText("right").textBox( rect, content, "middle" );
+  form.alignText("right").textBox( rect, content, "bottom" );
+
+  form.font;
+  form.fill("rgba(0,0,0,.2)")
+  form.alignText("center", "top").textBox( rect, content, "middle", "...", false );
+  form.alignText("center", "middle").textBox( rect, content, "middle", "...", false );
+  form.alignText("center", "bottom").textBox( rect, content, "middle", "...", false );
+  form.alignText("center", "hanging").textBox( rect, content, "middle", "...", false );
+  form.alignText("center", "baseline").textBox( rect, content, "middle", "...", false );
+    
+});
+
+//// ----  
+
+space.bindMouse().bindTouch().play();
+
+       </script>
+       <div class="link-container">
+        <a href="index.html">⭑ HOME ⭑</a>
+       </div>
+       <a href="https://www.babelmatrix.org/works/de/Kafka%2C_Franz-1883/Eine_Kreuzung/en/34808-A_Crossbreed_%28A_Sport%29" target="_blank">
+       <img src="crossiconn.png" alt="Moving Image" class="moving-image">
+    </a>
+       <a href="heart.html">
+       <img src="crossicon.png" alt="Moving Imagee" class="moving-imagee">
+    </a>
+</body>
+</html>
